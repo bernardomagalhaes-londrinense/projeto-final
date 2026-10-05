@@ -1,0 +1,58 @@
+/* Remove o margin e o padding e adiciona o border-box */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 767px){
+    .wrapper{
+        display: grid;
+    }
+}
+img{
+    max-width: 100px;
+}
+.cabecalho{
+    background-color: #f7f0f0;
+    height: 75px;
+}
+.barra-lateral{
+    background-color: #f7f0f0;
+    min-width: 200px;
+    padding: 16px;
+}
+.principal{
+    padding: 16px;
+    flex: 1;
+}
+.rodape{
+    padding: 16px;
+}
+/* Adiciona o flex ao site */
+.wrapper{
+    display: flex;
+    height: calc(100vh - 75px);
+}
+.conteudo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.bernardinho-joga{
+    color: #9003f2;
+    text-decoration: none;
+}
+.bernardinho-joga span{
+    color: #ffe500;
+}
+.hobbies ul{
+    margin-left: 20px;
+}
+.link-navegacao{
+    text-decoration: none;
+    color: black;
+}
+.cards{
+    display: flex;
+}
